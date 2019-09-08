@@ -13,6 +13,8 @@ from bs4 import BeautifulSoup
 # ====================================================
 
 def main():
+    """ main
+    """
     const_url = "http://192.168.11.2/index.html"
     res = req.urlopen(const_url)
 
@@ -44,6 +46,8 @@ def main():
 # ====================================================
 
 def start():
+    """ start
+    """
     t = datetime.datetime.fromtimestamp(time.time())
     print(" ++ begin ++ ({})".format(t.strftime('%Y/%m/%d %H:%M:%S')))
     main()
